@@ -1,0 +1,23 @@
+union() {
+        difference()
+        {
+            cylinder(r=20.31/2,h=32.16);   
+            translate([-10,7.7,0])
+            color ("red")
+            color ("blue") cube([20.31,7,32.16]);
+            translate([-10,-14.7,0])
+            color ("yellow")
+            color ("blue") cube([20.31,7,32.16]);
+            translate([5,0,13])
+        color ("Magenta") cylinder(r=1.94/2, h=20,$fn=100);  
+        translate([-5,0,13])
+        color ("Magenta") cylinder(r=1.94/2, h=20,$fn=100);  
+        translate([0,5,13])
+        color ("Magenta") cylinder(r=1.94/2, h=20,$fn=100);   
+            
+        }
+        translate([0,0,21])
+        color ("blue") cylinder(r=6.04/2, h=12,$fn=100);
+        translate([0,0,30])
+        color ("Magenta") cylinder(r=1.94/2, h=7.22,$fn=100);
+    }
